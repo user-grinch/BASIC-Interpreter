@@ -58,8 +58,8 @@ impl CodeManager {
     
     fn execute_code(&self) -> bool {
         for cmd in &self.commands {
-            if basic_functions::Bank.contains_key(&cmd.command) {
-                basic_functions::Bank[&cmd.command](&cmd.inputs);
+            if basic_functions::BANK.contains_key(&cmd.command) {
+                basic_functions::BANK[&cmd.command](&cmd.inputs);
             } else {
                 println!("Unknown command: {}", cmd.command);
             }
