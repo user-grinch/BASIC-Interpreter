@@ -1,4 +1,5 @@
-00 PRINT "Stated\n"
-10 TAB
-20 PRINT "Hello World!"
-30 GOTO 10
+PRINT Started
+NEWLINE
+LET x = 10
+PRINT Hello World!
+NEWLINE

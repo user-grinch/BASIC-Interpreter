@@ -1,6 +1,6 @@
 fn print_fn(vec: &Vec<String>) {
     let str: &String = &vec.join(" ");
-    print!("{}", &str[1..str.len()-1]);
+    print!("{}", &str);
 }
 
 fn tab_fn(_: &Vec<String>) {
@@ -15,7 +15,6 @@ fn null_fn(_: &Vec<String>) {
 }
 
 fn let_fn(vec: &Vec<String>) {
-    let words: Vec<&str> = vec[0].split("=").collect();
     
 }
 
